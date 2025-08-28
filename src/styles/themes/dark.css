@@ -1,6 +1,6 @@
 [data-theme="dark"] {
   /* Основные цвета */
-  --color-primary: #60a5fa;
+  --color-primary: #818cf8;
   --color-primary-hover: #3b82f6;
   --color-primary-light: #1e3a8a;
 
@@ -14,7 +14,8 @@
   --color-surface-hover: #334155;
 
   /* Текст */
-  --color-text: #f8fafc;
+  --color-text: #e2e8f0;
+    --color-text-accent:#fbbf24;
   --color-text-muted: #cbd5e1;
   --color-text-light: #94a3b8;
 
@@ -25,7 +26,7 @@
   --color-info: #22d3ee;
 
   /* Границы */
-  --color-border: #334155;
+    --color-border:#334155;
   --color-border-hover: #475569;
 
   /* Тени */

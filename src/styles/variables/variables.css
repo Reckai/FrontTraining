@@ -42,6 +42,7 @@
 
   /* Текст */
   --color-text: #0f172a;
+    --color-text-accent: #fbbf24;
   --color-text-muted: #64748b;
   --color-text-light: #94a3b8;
 
@@ -52,7 +53,7 @@
   --color-info: #06b6d4;
 
   /* Границы */
-  --color-border: #e2e8f0;
+    --color-border:#e2e8f0;
   --color-border-hover: #cbd5e1;
 
   /* Тени */
