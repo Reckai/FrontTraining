@@ -1,8 +1,7 @@
 export const availableThemes = [
   { value: 'light', label: '☀️ Светлая', description: 'Классическая светлая тема' },
   { value: 'dark', label: '🌙 Темная', description: 'Темная тема для работы в темноте' },
-  { value: 'green', label: '🌿 Зеленая', description: 'Природная зеленая тема' },
-  { value: 'pink', label: '🌸 Розовая', description: 'Нежная розовая тема' },
+
 ] as const
 
 export type Theme = (typeof availableThemes)[number]['value']

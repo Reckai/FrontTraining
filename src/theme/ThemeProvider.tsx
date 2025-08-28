@@ -8,6 +8,7 @@ function ThemeProvider({ children }: { children: React.ReactElement }) {
     () => ({
       theme: themeState.theme,
       setTheme: themeState.setTheme,
+      themeToggle: themeState.themeToggle,
     }),
     [themeState.theme],
   )

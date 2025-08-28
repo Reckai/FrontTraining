@@ -1,7 +1,7 @@
 @theme {
-  --font-montserrat: "Montserrat", ui-sans-serif, system-ui;
-  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
 
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+    --spacing: 0.25rem;
   /* Размеры */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;

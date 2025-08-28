@@ -1,24 +1,27 @@
-@import "tailwindcss";
+
 @import "./variables/variables.css";
 @import "./themes/light.css";
 @import "./themes/dark.css";
 @import "./themes/green.css";
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 @layer base {
-  html,
-  body {
+  html {
+    height: 100%; 
     background-color: var(--color-background);
-    color: var(--color-text);
-    min-height: 100%;
+ 
+  }
+
+  body {
+    height: 100%; /* Используем height вместо min-height */
+    margin: 0; /* Убираем дефолтные отступы */
+    padding: 0; 
+    background-color: var(--color-background);
+  
   }
 
   #root {
-    min-height: 100%;
+    min-height: 100vh; /* Используем viewport height */
   }
 }
