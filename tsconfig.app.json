@@ -14,6 +14,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+
     "allowImportingTsExtensions": true,
 
     /* Linting */
@@ -27,6 +28,10 @@
     "skipLibCheck": true,
     "noUncheckedSideEffectImports": true
   },
-
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public"
+  ],
   "include": ["src"]
 }
