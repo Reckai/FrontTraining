@@ -1,12 +1,13 @@
 import { Suspense } from 'react'
 import Navbar from '@/modules/Navbar/Navbar.tsx'
+import PageLoader from '@/modules/PageLoader/PageLoader.tsx'
 import Sidebar from '@/modules/Sidebar/Sidebar.tsx'
 import AppRouter from './providers/router/AppRouter'
 
 function App() {
   return (
     <div className="text-primary h-screen flex-col flex ">
-      <Suspense>
+      <Suspense fallback={<PageLoader />}>
         <Navbar />
         <div className="flex grow">
           <Sidebar />

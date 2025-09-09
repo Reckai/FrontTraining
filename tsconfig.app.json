@@ -28,10 +28,10 @@
     "skipLibCheck": true,
     "noUncheckedSideEffectImports": true
   },
+  "include": ["src"],
   "exclude": [
     "node_modules",
     "dist",
     "public"
-  ],
-  "include": ["src"]
+  ]
 }

@@ -1,11 +1,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
-// scripts/pull-translations.js
+
 import axios from 'axios'
 import dotenv from 'dotenv'
 
 dotenv.config()
-// Используем process.env вместо import.meta.env для Node.js
 const SHEET_ID = process.env.VITE_GOOGLE_SHEET
 
 if (!SHEET_ID) {
