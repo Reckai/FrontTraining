@@ -2,5 +2,6 @@
   "navigation": {
     "about": "About Page",
     "main": "Home Page"
-  }
+  },
+  "pageNotFound": "Page not found"
 }
