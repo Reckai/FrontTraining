@@ -1,7 +1,11 @@
 {
+  "close": "Close",
   "navigation": {
     "about": "About Page",
     "main": "Home Page"
   },
-  "pageNotFound": "Page not found"
+  "open": "Open",
+  "pageError": " An unexpected error has occurred",
+  "pageNotFound": "Page not found",
+  "reloadPage": "Reload page"
 }
