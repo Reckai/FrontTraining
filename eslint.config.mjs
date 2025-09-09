@@ -6,6 +6,7 @@ export default antfu({}, {
     i18next,
   },
   rules: {
+    'node/prefer-global/process': ['error', 'always'],
     'i18next/no-literal-string': ['error', {
       // Customize options here
       markupOnly: true, // Only check JSX markup (default behavior)
