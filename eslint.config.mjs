@@ -5,6 +5,7 @@ export default antfu({}, {
   plugins: {
     i18next,
   },
+  ignores: ['.github/**/*'],
   rules: {
     'node/prefer-global/process': ['error', 'always'],
     'i18next/no-literal-string': ['error', {
