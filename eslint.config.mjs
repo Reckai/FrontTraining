@@ -8,12 +8,13 @@ export default antfu({}, {
   rules: {
     'node/prefer-global/process': ['error', 'always'],
     'i18next/no-literal-string': ['error', {
-      // Customize options here
       markupOnly: true, // Only check JSX markup (default behavior)
-      // You can add more options like:
-      // ignoreCallee: ['yourFunction'],
-      // ignoreAttribute: ['data-testid', 'className'],
-      // etc.
+
     }],
+  },
+}, {
+  files: ['**/*.test.*', '**/*.spec.*', '**/__tests__/**/*', '**/tests/**/*'],
+  rules: {
+    'i18next/no-literal-string': 'off',
   },
 })
