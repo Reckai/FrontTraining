@@ -2,9 +2,12 @@
 [data-theme="light"] {
   /* Основные цвета */
   --color-primary: #6366f1;
-  --color-primary-hover: #2563eb;
+    --color-primary-hover: #5355c5;
   --color-primary-light: #dbeafe;
 
+
+    --color-destructive: #e61b48;
+    --color-destructive-hover: #c41b41;
   --color-secondary: #64748b;
   --color-secondary-hover: #475569;
   --color-secondary-light: #f1f5f9;

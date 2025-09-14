@@ -28,8 +28,11 @@
   --transition-slow: 350ms ease;
 
   --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
+    --color-primary-hover: #5355c5;
   --color-primary-light: #dbeafe;
+
+    --color-destructive: #b20f33;
+    --color-destructive-hover: #870c27;
 
   --color-secondary: #64748b;
   --color-secondary-hover: #475569;

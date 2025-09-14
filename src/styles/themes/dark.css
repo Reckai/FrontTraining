@@ -1,8 +1,11 @@
 [data-theme="dark"] {
   /* Основные цвета */
-  --color-primary: #818cf8;
-  --color-primary-hover: #3b82f6;
+    --color-primary: #6366f1;
+    --color-primary-hover: #5355c5;
   --color-primary-light: #1e3a8a;
+
+    --color-destructive: #b20f33;
+    --color-destructive-hover: #870c27;
 
   --color-secondary: #94a3b8;
   --color-secondary-hover: #cbd5e1;
