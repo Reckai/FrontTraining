@@ -8,7 +8,7 @@ import { cn } from '@/utils/classNames.ts'
 interface SidebarProps extends React.ComponentProps<'div'> {}
 
 function Sidebar({ className }: SidebarProps) {
-  const [open, toggle] = useToggle(false)
+  const [open, toggle] = useToggle()
 
   return (
     <motion.div
@@ -37,7 +37,7 @@ function Sidebar({ className }: SidebarProps) {
           )}
         </AnimatePresence>
 
-        <Button onClick={toggle}>
+        <Button onClick={() => toggle()}>
           {open ? 'Close' : 'Open'}
         </Button>
       </div>

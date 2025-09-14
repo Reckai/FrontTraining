@@ -27,41 +27,41 @@
   --transition-normal: 250ms ease;
   --transition-slow: 350ms ease;
 
-  --color-primary: #3b82f6;
+    --color-primary: #6366f1;
     --color-primary-hover: #5355c5;
-  --color-primary-light: #dbeafe;
+    --color-primary-light: #dbeafe;
 
-    --color-destructive: #b20f33;
-    --color-destructive-hover: #870c27;
 
-  --color-secondary: #64748b;
-  --color-secondary-hover: #475569;
-  --color-secondary-light: #f1f5f9;
+    --color-destructive: #e61b48;
+    --color-destructive-hover: #c41b41;
+    --color-secondary: #64748b;
+    --color-secondary-hover: #475569;
+    --color-secondary-light: #f1f5f9;
 
-  /* Фоны */
-  --color-background: #ffffff;
-  --color-surface: #f8fafc;
-  --color-surface-hover: #f1f5f9;
+    /* Фоны */
+    --color-background: #fefefe;
+    --color-surface: #f8fafc;
+    --color-surface-hover: #f1f5f9;
 
-  /* Текст */
-  --color-text: #0f172a;
+    /* Текст */
+    --color-text: #334155;
     --color-text-accent: #fbbf24;
-  --color-text-muted: #64748b;
-  --color-text-light: #94a3b8;
+    --color-text-muted: #64748b;
+    --color-text-light: #94a3b8;
 
-  /* Состояния */
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
-  --color-info: #06b6d4;
+    /* Состояния */
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #06b6d4;
 
-  /* Границы */
+    /* Границы */
     --color-border:#e2e8f0;
-  --color-border-hover: #cbd5e1;
+    --color-border-hover: #cbd5e1;
 
-  /* Тени */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    /* Тени */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 }

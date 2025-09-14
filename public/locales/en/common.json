@@ -1,5 +1,8 @@
 {
   "close": "Close",
+  "darkTheme": "🌙 Dark",
+  "greenTheme": "🌿Green",
+  "lightTheme": "☀️ Light",
   "navigation": {
     "about": "About Page",
     "main": "Home Page"

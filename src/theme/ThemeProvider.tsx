@@ -7,7 +7,6 @@ function ThemeProvider({ children }: { children: React.ReactElement }) {
   const props = React.useMemo(
     () => ({
       theme: themeState.theme,
-      setTheme: themeState.setTheme,
       themeToggle: themeState.themeToggle,
     }),
     [themeState.theme],

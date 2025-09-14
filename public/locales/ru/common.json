@@ -1,5 +1,8 @@
 {
   "close": "Закрыть",
+  "darkTheme": "🌙 Темная",
+  "greenTheme": "🌿 Зелёная",
+  "lightTheme": "☀️ Светлая",
   "navigation": {
     "about": "Страница \"О нас\"",
     "main": "Главная страница"

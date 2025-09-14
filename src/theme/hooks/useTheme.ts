@@ -1,12 +1,20 @@
-import { useCallback, useEffect, useState } from 'react'
-import { getInitialTheme, getSystemTheme, saveTheme, setThemeAttribute } from '../utils/theme'
+import { useCallback, useEffect } from 'react'
+import { useToggle } from '@/modules/shared/hooks/useToggle/useToggle.tsx'
+import { getInitialTheme, getSystemTheme, saveTheme, setThemeAttribute, themes } from '../utils/theme'
+
+const getInitialState = () => {
+  const initialTheme = getInitialTheme()
+  const index = themes.indexOf(initialTheme)
+  return [initialTheme, ...themes.slice(0, index), ...themes.slice(index + 1)]
+}
 
 export function useTheme() {
-  const [theme, setTheme] = useState(() => getInitialTheme())
+  const initialState = getInitialState()
+  const [theme, toggle, nextTheme] = useToggle(initialState)
+
   const themeToggle = useCallback(() => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
-    saveTheme(newTheme)
+    toggle()
+    saveTheme(nextTheme)
   }, [theme])
   useEffect(() => {
     setThemeAttribute(theme)
@@ -17,7 +25,7 @@ export function useTheme() {
 
     const handleSystemThemeChange = () => {
       if (!localStorage.getItem('theme')) {
-        setTheme(getSystemTheme())
+        toggle(getSystemTheme())
       }
     }
 
@@ -26,7 +34,7 @@ export function useTheme() {
   }, [])
   return {
     theme,
-    setTheme,
+    toggle,
     themeToggle,
   }
 }

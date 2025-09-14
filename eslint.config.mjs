@@ -3,13 +3,14 @@ import i18next from 'eslint-plugin-i18next'
 
 export default antfu(
   {
-    ignores: ['.github/**/*'],
+    ignores: ['.github/**/*', 'public/**/*'],
   },
   {
     plugins: {
       i18next,
     },
     rules: {
+      'antfu/top-level-function': 'off',
       'node/prefer-global/process': ['error', 'always'],
       'i18next/no-literal-string': ['error', {
         markupOnly: true, // Only check JSX markup (default behavior)

@@ -1,11 +1,11 @@
 export const availableThemes = [
-  { value: 'light', label: '☀️ Светлая', description: 'Классическая светлая тема' },
-  { value: 'dark', label: '🌙 Темная', description: 'Темная тема для работы в темноте' },
-
+  { value: 'light', key: 'lightTheme' },
+  { value: 'dark', key: 'darkTheme' },
+  { value: 'green', key: 'greenTheme' },
 ] as const
 
 export type Theme = (typeof availableThemes)[number]['value']
-
+export const themes = availableThemes.map(theme => theme.value)
 export function getStoredTheme(): Theme | null {
   const storedTheme = localStorage.getItem('theme')
 

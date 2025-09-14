@@ -1,6 +1,6 @@
 
 @import "./variables/variables.css";
-@import "./themes/light.css";
+
 @import "./themes/dark.css";
 @import "./themes/green.css";
 @import "tailwindcss";
