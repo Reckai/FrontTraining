@@ -21,11 +21,11 @@ const NavigationLink = ({ to, label, icon, isCollapsed = false }: NavigationLink
       }}
     >
       <Link
-        className="flex items-center gap-3 p-3 rounded-lg hover:border-border hover:border-[1px] border-[1px] border-transparent transition-colors duration-200 group"
+        className="flex items-center  p-3 rounded-lg hover:border-border hover:border-[1px] border-[1px] border-transparent transition-colors duration-200 group"
         to={to}
-        title={isCollapsed ? label : undefined} // показываем tooltip при свернутом состоянии
+        title={isCollapsed ? label : undefined}
       >
-        {/* Иконка */}
+
         {icon && (
           <div
             className={`flex-shrink-0 transition-all duration-300 ${
@@ -36,10 +36,10 @@ const NavigationLink = ({ to, label, icon, isCollapsed = false }: NavigationLink
           </div>
         )}
 
-        {/* Текст с анимацией появления/исчезновения */}
         <motion.span
           initial={false}
           animate={{
+            marginLeft: isCollapsed ? 0 : 12,
             opacity: isCollapsed ? 0 : 1,
             width: isCollapsed ? 0 : 'auto',
           }}
